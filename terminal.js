@@ -27,7 +27,7 @@ const readContent = () => {
   let sum = 0;
   rl.on("line", (line) => {
     const num = Number(line);
-    isNaN(num) ? console.log("") : (sum += num);
+    !isNaN(num) && (sum += num);
   });
   rl.on("close", () => {
     console.log(sum);
