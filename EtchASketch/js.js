@@ -11,6 +11,7 @@ const setUpCanvas = () => {
   canvasContainer.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
 
   const fragment = document.createDocumentFragment();
+
   for (let i = 0; i < columns * rows; ++i) {
     const div = document.createElement("div");
     div.className = "canvas-color-boxes";
