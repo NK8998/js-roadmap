@@ -1,7 +1,7 @@
 const BOX_SIZE = 10;
 const canvasContainer = document.querySelector(".canvas-container");
 
-const setUpCanvas = () => {
+const setUpCanvas = () => {//anymous function assigned to a variable
   const { width: canvasWidth, height: canvasHeight } =
     canvasContainer.getBoundingClientRect(); //allows us to get dimensions of an element
   const columns = Math.floor(canvasWidth / BOX_SIZE);
