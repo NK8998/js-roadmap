@@ -16,7 +16,6 @@ const fs = require("fs");
 //   console.log(answer);
 //   rl.close();
 // };
-
 // getAnswer();
 
 const rl = readline.createInterface({
@@ -25,10 +24,12 @@ const rl = readline.createInterface({
 
 const readContent = () => {
   let sum = 0;
+
   rl.on("line", (line) => {
     const num = Number(line);
     !isNaN(num) && (sum += num);
   });
+
   rl.on("close", () => {
     console.log(sum);
   });
